@@ -1,6 +1,7 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://yusophdev.vercel.app/" target="_blank">Yusoph Dev</a>
+  <a href="https://yusoph.vercel.app/" target="_blank">Yusoph Portfolio in Vercel</a>
+  <a href="https://yusoph.surge.sh/" target="_blank">Yusoph Portfolio in Surge</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
@@ -31,7 +32,7 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Built With
 
-My personal portfolio <a href="https://yusoph-dev.vercel.app/" target="_blank">y.Dev</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://yusoph.vercel.app/" target="_blank">y.Dev</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
