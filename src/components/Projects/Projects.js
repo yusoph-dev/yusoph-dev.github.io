@@ -77,7 +77,7 @@ const projects = [
                       "snps", 
                       false,
                       'http://snpsdoces.edu.ph/', 
-                      "SNPS", 
+                      "Sto. Ni", 
                       "I contributed to developing an interactive WordPress landing page, utilizing the Elementor Plugin, for Sto. Niño Parochial School (SNPS). This dynamic platform effectively guides prospective students through admissions, offers a parent portal, disseminates news and articles, highlights student life, a FAQ section, and showcases the school's values."
                       ),
   generateProjectData(6, 9, 
@@ -147,19 +147,19 @@ const projects = [
   generateProjectData(17, 6, 
                       "hfps", 
                       false, false, 
-                      "HFPS", 
+                      "Holy Family Parochial School", 
                       "I played a key role in developing a dynamic WordPress landing page using Elementor for Holy Family Parochial School. This interactive platform effectively showcases the school's core values, distributes news and articles, guides prospective students through the admissions process, provides a glimpse into student life, and offers a comprehensive FAQ section."
                       ),
   generateProjectData(18, 5, 
                       "olhps", 
                       false, false, 
-                      "OLHPS", 
+                      "Our Lady of Hope Parochial School", 
                       "I played a vital part in creating an engaging WordPress landing page for Our Lady Of Perpetual Help School (OLHPS). This dynamic platform effectively presents the school's values, shares news and articles, assists prospective students with admissions, provides a parent portal, showcases student life, and includes a FAQ section."
                       ),
   generateProjectData(19, 4, 
                       "sjcs", 
                       false, false, 
-                      "SJCS", 
+                      "St. Joseph Catholic School", 
                       "I played a crucial role in developing an interactive WordPress landing page also by using Elementor Plugin for Our Saint Joseph Catholic School (SJCS). This vibrant platform effectively showcases the school's values, disseminates news and articles, guides prospective students through admissions, offers a parent portal, highlights student life, and includes a comprehensive FAQ section."
                       ),
   generateProjectData(21, 7, 

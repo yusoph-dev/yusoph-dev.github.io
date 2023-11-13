@@ -10,6 +10,7 @@ function Type() {
           "Freelancer",
           "Self-taught MERN Stack Developer",
           "LaraVue Stack Developer",
+          "Wordpress Developer",
         ],
         autoStart: true,
         loop: true,
