@@ -63,7 +63,7 @@ const projects = [
                       "iccs", 
                       false, 
                       'https://iccs.edu.ph/', 
-                      "ICCS", 
+                      "Immaculate Conception Cathedral School", 
                       "My assignment involved the creation of a WordPress landing page using Elementor for the Immaculate Conception Cathedral School. This page serves as a dynamic platform, highlighting the institution's core values, disseminating news and articles, providing insights into the admission process, portraying student life, and offering comprehensive FAQs."
                       ),
   generateProjectData(5, 17, 
@@ -77,7 +77,7 @@ const projects = [
                       "snps", 
                       false,
                       'http://snpsdoces.edu.ph/', 
-                      "Sto. Ni", 
+                      "Sto. Nino Parochial School", 
                       "I contributed to developing an interactive WordPress landing page, utilizing the Elementor Plugin, for Sto. Niño Parochial School (SNPS). This dynamic platform effectively guides prospective students through admissions, offers a parent portal, disseminates news and articles, highlights student life, a FAQ section, and showcases the school's values."
                       ),
   generateProjectData(6, 9, 
