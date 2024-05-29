@@ -31,6 +31,7 @@ import {
   SiAdonisjs
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
+import Tilt from "react-parallax-tilt";
 
 function renderTooltip(props, text) {
   return (
@@ -42,17 +43,12 @@ function renderTooltip(props, text) {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger
-          placement="top"
-          delay={{ show: 250, hide: 400 }}
-          overlay={(props) => renderTooltip(props, 'Docker')}
-        >
-          <SiDocker />
-        </OverlayTrigger>
+      {/* navigeate on specific link when clicked tech-icons */}
+      <Col xs={4} md={2} className="tech-icons" onClick={()=>window.open=('https://www.docker.com/', '_blank')}>
+        <DiPython />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAdonisjs />
+      <Col xs={4} md={2} className="tech-icons" onClick={()=>{ }}> 
+        <SiDocker />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAdonisjs />
