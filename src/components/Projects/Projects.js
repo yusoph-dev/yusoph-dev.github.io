@@ -171,6 +171,7 @@ const projects = [
 ];
 
 function Projects() {
+  const yearDifference = (new Date()).getFullYear() - 2017;
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -179,7 +180,7 @@ function Projects() {
           My <strong className="purple">Works</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are the projects on which I've worked for the past 6 years.
+          Here are the projects on which I've worked for the past {yearDifference} years.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projects.map((project, index) => (

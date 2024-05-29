@@ -11,10 +11,11 @@ function Type() {
           "Self-taught MERN Stack Developer",
           "LaraVue Stack Developer",
           "Wordpress Developer",
+          "React-AdonisJs Developer",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 5,
       }}
     />
   );

@@ -19,20 +19,21 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I've developed a deep affection for programming, and I've certainly gained some knowledge, or so I believe... 🤷‍♂️
+              I've developed a deep affection for programming, and I've certainly gained some knowledge, or so I believe... 
               <br />
               <br />I possess proficiency in foundational languages such as 
               <i>
-                <b className="purple"> PHP, Javascript and Go. </b>
+                <b className="purple"> PHP, Javascript. </b>
               </i>
               <br />
               <br />
               My primary areas of interest revolve around creating innovative &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b>  along with exploring aspects connected to{" "}
+                <b className="purple">Web Technologies and Products </b>  
+                {/* along with exploring aspects connected to{" "}
                 <b className="purple">
                   Blockchain Technologies.
-                </b>
+                </b> */}
               </i>
               <br />
               <br />
@@ -45,7 +46,7 @@ function Home2() {
               </i>
               &nbsp; Including
               <i>
-                <b className="purple"> React.js, Vue.js and Next.js</b>
+                <b className="purple"> ReactJs, VueJs, NextJs AdonisJs</b>
               </i>
             </p>
           </Col>

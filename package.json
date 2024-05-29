@@ -22,7 +22,8 @@
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.42.2",
     "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "written-number": "^0.11.1"
   },
   "scripts": {
     "deploy": "gh-pages -d build",
