@@ -19,37 +19,37 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I've developed a deep affection for programming, and I've certainly gained some knowledge, or so I believe... 
+              I’m a passionate <b className="purple">Full-Stack Developer</b> and{" "}
+              <b className="purple">Tech Speaker</b> with a strong drive for building scalable 
+              and high-performance applications. Over the years, I’ve gained valuable experience 
+              in developing, optimizing, and securing modern web solutions.
               <br />
-              <br />I possess proficiency in foundational languages such as 
+              <br />
+              My expertise includes working with  
               <i>
-                <b className="purple"> PHP, Javascript. </b>
-              </i>
+                <b className="purple"> JavaScript, PHP, and Python</b>
+              </i>, with a focus on creating robust backend systems and dynamic user experiences.
               <br />
               <br />
-              My primary areas of interest revolve around creating innovative &nbsp;
+              I specialize in developing cutting-edge{" "}
               <i>
-                <b className="purple">Web Technologies and Products </b>  
-                {/* along with exploring aspects connected to{" "}
-                <b className="purple">
-                  Blockchain Technologies.
-                </b> */}
-              </i>
+                <b className="purple">Web Technologies and Scalable Cloud Solutions</b>
+              </i>, 
+              integrating AI, and ensuring security best practices in software development.
               <br />
               <br />
-              Whenever the opportunity arises, I channel my enthusiasm into crafting products using <b className="purple">Node.js</b> and
+              I am highly proficient in modern frameworks and backend technologies such as{" "}
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; Including
-              <i>
-                <b className="purple"> ReactJs, VueJs, NextJs AdonisJs</b>
-              </i>
+                <b className="purple">Node.js, Flask, Laravel</b>
+              </i>, and I enjoy crafting innovative solutions using{" "}
+              <b className="purple">React.js, Vue.js, Next.js, and Adonis.js</b>.
+              <br />
+              <br />
+              Aside from coding, I actively engage in **tech talks and mentorship**, sharing insights on{" "}
+              <b className="purple">Git, Cloud Technologies, and Cybersecurity</b>.
             </p>
           </Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
@@ -75,7 +75,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/yusoph-dev/"
+                  href="https://www.linkedin.com/in/yusoph"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
