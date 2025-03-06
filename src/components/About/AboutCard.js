@@ -26,21 +26,21 @@ function AboutCard() {
             <span className="purple">Manila, Philippines.</span>
             <br />
             <br /> I am a <span className="purple">Full-Stack Developer & Tech Speaker</span> 
-            with {yearDifference} years of experience. I specialize in{" "}
+            {" "}with {yearDifference} years of experience. I specialize in{" "}
             <span className="purple">modern web development, cloud computing, and scalable software solutions.</span> 
-            Over the past <span className="purple">{yearWord} years</span>, I've had the opportunity 
+            {" "}Over the past <span className="purple">{yearWord} years</span>, I've had the opportunity 
             to work at {companiesList}, gaining valuable experience in building robust applications.
             <br />
             <br />
             I have successfully developed and optimized high-traffic{" "}
             <span className="purple">e-commerce platforms, e-learning systems, and blockchain-based applications.</span> 
-            My expertise includes architecting scalable APIs, integrating AI-driven features, and collaborating with 
+            {" "}My expertise includes architecting scalable APIs, integrating AI-driven features, and collaborating with 
             cross-functional teams to deliver high-quality solutions.  
             <br />
             <br />
             Beyond coding, I am also passionate about{" "}
             <span className="purple">sharing knowledge through tech talks and mentoring developers.</span>  
-            Some of my recent speaking engagements include:
+            {" "}Some of my recent speaking engagements include:
           </p>
           <ul>
             <li className="about-activity">
