@@ -6,8 +6,10 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
+import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineEye, AiOutlineUser } from "react-icons/ai";
+import { FaUsers } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
+import Flag from 'react-world-flags';
 import { db } from "../firebase";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 
@@ -15,6 +17,7 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [visitorCount, setVisitorCount] = useState(0);
+  const [countryCode, setCountryCode] = useState('');
 
   useEffect(() => {
     const token = process.env.REACT_APP_IPINFO_TOKEN;
@@ -26,9 +29,11 @@ function NavBar() {
           date: new Date().toISOString(),
           city: data.city,
           region: data.region,
-          country: data.country
+          country: data.country,
+          countryCode: data.country.toUpperCase()
         };
         localStorage.setItem('visitorLog', JSON.stringify(logEntry));
+        setCountryCode(logEntry.countryCode);
 
         // Store log entry in Firestore
         try {
@@ -129,6 +134,11 @@ function NavBar() {
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item> */}
+            <Nav.Item>
+              <Nav.Link>
+                <FaUsers style={{ marginBottom: "2px" }} /> {visitorCount} <Flag code={countryCode} style={{ width: "20px", height: "15px", marginBottom: "2px" }} />
+              </Nav.Link>
+            </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
@@ -139,11 +149,6 @@ function NavBar() {
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link>
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {visitorCount}
-              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
