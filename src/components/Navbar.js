@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// filepath: /Applications/XAMPP/xamppfiles/htdocs/GitHub/Portfolio-yusoph/src/components/Navbar.js
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -15,10 +16,35 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { db } from "../firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
+  useEffect(() => {
+    const token = process.env.REACT_APP_IPINFO_TOKEN;
+    fetch(`https://ipinfo.io/json?token=${token}`)
+      .then(response => response.json())
+      .then(async data => {
+        const logEntry = {
+          ip: data.ip,
+          date: new Date().toISOString(),
+          city: data.city,
+          region: data.region,
+          country: data.country
+        };
+        localStorage.setItem('visitorLog', JSON.stringify(logEntry));
+
+        // Store log entry in Firestore
+        try {
+          await addDoc(collection(db, "visitorLogs"), logEntry);
+        } catch (e) {
+        }
+      })
+      .catch(error => console.error('Error fetching visitor info:', error));
+  }, []);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -111,6 +137,9 @@ function NavBar() {
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
+            </Nav.Item>
+            <Nav.Item>
+              
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
